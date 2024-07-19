@@ -16,6 +16,7 @@ class Plant{
       int minWaterLevel;
       int maxWaterLevel;
       int WaterLevel;
+      bool ValveState;
       String Name;
 
       void initWaterSensor();
@@ -26,6 +27,7 @@ class Plant{
       Plant(int, int, String);
       Plant(int,int,long,int,int,String);
 
+      //Set Variables
       void setWaterSensorPin(int);
       void setValvePin(int);
       void settDelay(long);
@@ -33,7 +35,9 @@ class Plant{
       void setMaxWaterLevel(int);
       void setWaterLevel(int);
       void setName(String);
+      void setValveState(bool);
 
+      //Get Variables
       int getWaterSensorPin();
       int getValvePin();
       long gettDelay();
@@ -41,6 +45,11 @@ class Plant{
       int getMaxWaterLevel();
       int getWaterLevel();
       String getName();
+      bool getValveState();
+
+      //Functions
+      void closeValve();
+      void openValve();
 };
 
 #endif

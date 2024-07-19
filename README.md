@@ -1,7 +1,7 @@
-# LEDs
+# Plant
 
-Arduino library to control LEDs. Creates an LED object which can be used to turn LEDs on/off and enter blinking states.
+Arduino library to control valves and water detectors in different plants. Creates an plant object which can be used to close/open valves when water in a plant pot hits a certain level.
 
 ## Description
 
-A simple LED library for creating LED objects and controlling them.
+A simple plant library for creating plant objects.
